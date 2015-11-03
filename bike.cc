@@ -1,26 +1,14 @@
-
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
 
-class mobike {
+  void mobike::Devolver(int d){
 
-private:
-    float credito;
-public:
+  int devolver = d;
 
-    mobike();
-
-    void retirar(int r);
-    void devolver(int d);
-    void verificacredito (int v);
-};
-
-int main ()
-{
-    return 0;
 }
+
 
 
 
