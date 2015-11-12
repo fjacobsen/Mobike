@@ -6,6 +6,7 @@
 
 using namespace std;
 
+
 //cout << "Testando" << endl;
 void mobike::retirar(int r) {
     int cartao;
@@ -57,7 +58,18 @@ void mobike::retirar(int r) {
 
 }
 int main() {
-cout << "Olá " << endl;
+int opcao;
+cout << "Olá, já é usuário? " << endl;
+cout << "Digite 1 para sim ou 0 para não" << endl;
+cin >>opcao;
+if(opcao == 1)
+{
+return 2001;
+}
+else if(opcao == 0)
+{
+cout << "Deseja fazer cadastro?" << endl;
+}
 mobike m;
 m.retirar(6);
 }
