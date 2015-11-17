@@ -21,6 +21,7 @@ void mobike::devolver(int d) {
     bikes[9] = 1;
     bikes[10] = 0;
 
+
     cout << "############ Mobike posto PUCRS ############" << endl;
 
     for(int i=1; i <= 10 ; i++){
