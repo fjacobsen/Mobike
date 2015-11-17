@@ -12,9 +12,9 @@ int main() {
     cout << "Abrindo arquivo texto..." << endl;
 
     // Abre arquivo
-    arq.open( "CadastroBike.txt" , ios::in );
+    arq.open( "Bikes.txt" , ios::in );
 
-    // Se houver erro, sai do programa
+    // Seid carregar  houver erro, sai do programa
     if (!arq.is_open())
         return 0;
     // Agora, lê n registros numéricos
