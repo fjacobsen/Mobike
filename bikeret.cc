@@ -96,17 +96,28 @@ int main() {
 
 
     int opcao;
+    int bike;
     cout << "Olá, já é usuário? " << endl;
     cout << "Digite 1 para sim ou 0 para não" << endl;
     cin >>opcao;
     if(opcao == 1)
     {
-        return 2001;
+        cout << "Qual Bike deseja retirar?" << endl;
+	cin >> bike;
+//TODO alterar no .txt a bike retirada
     }
     else if(opcao == 0)
     {
         cout << "Deseja fazer cadastro?" << endl;
+	cin >> opcao;
+	if(opcao == 1)
+{ cout << "Cadastro realizado" << endl;
+}
+else if(opcao == 0)
+{ cout << "Encerrando..." << endl;
+}
     }
     mobike m;
     m.retirar(6);
 }
+
