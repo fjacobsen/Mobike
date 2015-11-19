@@ -1,9 +1,10 @@
+#include"bike.h"
 void mobike::retirar(int r) {
     int cartao;
     int credito;
     //float tempo;
      //São 10 bicicletas no posto. esse vetor tem 10 valores, cada um é um inteiro
-    bikes[0]=100;
+    //bikes[0]=100;
     bikes[1] = 1;
     bikes[2] = 1;
     bikes[3] = 1;
@@ -46,10 +47,10 @@ void mobike::retirar(int r) {
     }
 }
 
- mobike();
+ void mobike();
 
     
     void devolver(int d);
     void verificacredito (int v);
     void carregaarquivo();
-prefixo de classe abrir fechar chave e ver se compila
+//prefixo de classe abrir fechar chave e ver se compila

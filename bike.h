@@ -1,11 +1,12 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class mobike {
 
 private:
     float credito;
- vector<int> bikes;
+ vector <int> bikes;
 
 public:
     mobike();
