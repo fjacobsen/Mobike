@@ -4,7 +4,7 @@
 #include <iomanip>
 #include <cstdlib>
 #include "bike.h"
-#include"bike.cc"
+
 
 using namespace std;
 

@@ -2,21 +2,41 @@
 void mobike::retirar(int r) {
     int cartao;
     int credito;
-    //float tempo;
-     //São 10 bicicletas no posto. esse vetor tem 10 valores, cada um é um inteiro
-    //bikes[0]=100;
-    bikes[1] = 1;
-    bikes[2] = 1;
-    bikes[3] = 1;
-    bikes[4] = 0; //0 = sem bicicleta no posto
-    bikes[5] = 1;
-    bikes[6] = 1;
-    bikes[7] = 0;
-    bikes[8] = 1 ;
-    bikes[9] = 1;
-    bikes[10] = 0;
+    
 
     cout << "############ Mobike posto PUCRS ############" << endl;
+// inicio tentativa de incluir dados do txt ao vetor
+vector <int> disponibilidade;
+int valor=0;
+
+
+  ifstream file ("Bikes.txt");
+   if ( file.is_open())
+   {
+     while  (! file.eof())
+       {
+       while (file >> valor){
+            disponibilidade.push_back(valor);
+       }
+     }
+   }else{
+       cout << "Não foi possível abrir o arquivo."<<endl;
+    }
+      for ( int i = 0; i < disponibilidade.size(); i++){
+	if(disponibilidade[i] == 1) // tentativa de melhorar
+{
+ cout << "Bike disponível" << endl;
+}
+        //cout << disponibilidade[i] << endl;
+else if(disponibilidade[i] == 0)
+{
+ cout << "Bike indisponível" << endl;
+}
+
+      }
+
+file.close();
+//fim
     for(int i=1; i <= 10 ; i++)
     {
         if(bikes[i] == 0)
