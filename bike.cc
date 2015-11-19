@@ -7,8 +7,6 @@ void mobike::retirar(int r)
 // inicio tentativa de incluir dados do txt ao vetor
     vector <int> disponibilidade;
     int valor=0;
-
-
     ifstream file ("Bikes.txt");
     if ( file.is_open())
     {
@@ -76,17 +74,9 @@ void mobike::retirar(int r)
         {   cout << "Encerrando..." << endl;
         }
     }
-
-
-
-
-
 } // termina retirar
 
 void mobike();
-
-
 void devolver(int d);
 void verificacredito (int v);
 void carregaarquivo();
-//prefixo de classe abrir fechar chave e ver se compila
