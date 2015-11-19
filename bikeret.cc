@@ -11,6 +11,7 @@ using namespace std;
 
 
 int main() {
+}
 
 // Cria input file stream (ifstream)
 //    ifstream arq;
@@ -25,7 +26,7 @@ int main() {
 //        return 0;
 // Agora, lê n registros numéricos
 //    do
-   // {
+    // {
 //        int valor;
 //        arq >> valor;
 //        if(!arq.fail()) {
@@ -37,8 +38,8 @@ int main() {
 //        exit(1);		// Aborta programa
 //    }
 //    cout << "Fechando o arquivo..." << endl;
-//    arq.close();   
-  //  mobike m;
-   // m.retirar(6);
-}
+//    arq.close();
+    //  mobike m;
+    // m.retirar(6);
+
 

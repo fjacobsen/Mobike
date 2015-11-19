@@ -1,4 +1,9 @@
 #include"bike.h"
+#include <iostream>
+#include<vector>
+#include <fstream>
+#include <iomanip>
+#include <cstdlib>
 void mobike::retirar(int r) 
 {// inicia retirar
     int cartao;
