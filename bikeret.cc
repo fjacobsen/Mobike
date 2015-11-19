@@ -37,11 +37,7 @@ int main() {
 //        exit(1);		// Aborta programa
 //    }
 //    cout << "Fechando o arquivo..." << endl;
-//    arq.close();
-
-   
-//TODO alterar no .txt a bike retirada
-   
+//    arq.close();   
   //  mobike m;
    // m.retirar(6);
 }

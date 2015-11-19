@@ -1,10 +1,9 @@
 #include"bike.h"
-void mobike::retirar(int r) {
+void mobike::retirar(int r) 
+{// inicia retirar
     int cartao;
     int credito;
     cout << "############ Mobike posto PUCRS ############" << endl;
-
- 
 // inicio tentativa de incluir dados do txt ao vetor
     vector <int> disponibilidade;
     int valor=0;
@@ -44,11 +43,28 @@ void mobike::retirar(int r) {
     cin >>opcao;
     if(opcao == 1)
     {
-        cout << "Seja bem vindo novamente, qual bike deseja retirar?" << endl;
+	cout << "Informe o numero do cartao:" << endl;
+	cin >> cartao;
+	if(cartao != 0) // supondo que se o cartao for diferente de 0 ele é valido
+{
+    cout << "Informe 1 para passe diario ou 2 para passe mensal" << endl;
+    cin >> credito;
+    if(credito == 1)    // credito 1 = passe diario
+    {
+        cout << "Você escolheu o passe diário." << endl;
+    }
+
+    else if(credito == 2) // credito 2 = passe mensal
+    {
+        cout << "Você escolheu o passe mensal." << endl;
+    }
+} //fecha if
+        cout << "Qual bike deseja retirar?" << endl;
         cin >> bike;
-}
+        cout << "Bike " << bike << " destravada, favor retirar." << endl;
+    }
 //TODO fazer o programa alterar a disponibilidade no txt de 1 para 0
- 
+
     else if(opcao == 0)
     {
         cout << "Deseja fazer cadastro?" << endl;
@@ -60,35 +76,12 @@ void mobike::retirar(int r) {
         {   cout << "Encerrando..." << endl;
         }
     }
-//    for(int i=1; i <= 10 ; i++)
-//    {
-//        if(bikes[i] == 0)
-//            cout << "Não há bike no lugar " << i << endl;
-//        else if(bikes[i] == 1)
-//            cout << "Há bike no lugar " << i << endl;
-
-}
 
 
-cout << "Informe o numero do cartao:" << endl;
-cin >> cartao;
 
-if(cartao != 0) // supondo que se o cartao for diferente de 0 ele é valido
-{
-    cout << "Informe 1 para passe diario ou 2 para passe mensal" << endl;
-    cin >> credito;
-    if(credito == 1)    // credito 1 = passe diario
-    {
-        cout << "Você escolheu o passe diário, bom passeio." << endl;
-    }
 
-    else if(credito == 2) // credito 2 = passe mensal
-    {
-        cout << "Você escolheu o passe mensal, bom passeio." << endl;
-    }
 
-}
-}
+} // termina retirar
 
 void mobike();
 
